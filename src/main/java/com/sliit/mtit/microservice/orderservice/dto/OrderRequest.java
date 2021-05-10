@@ -1,0 +1,4 @@
+package com.sliit.mtit.microservice.orderservice.dto;
+
+public class OrderRequest {
+}
