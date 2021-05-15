@@ -1,5 +1,7 @@
 package com.sliit.mtit.microservice.orderservice.dto;
 
+import java.util.StringJoiner;
+
 public class OrderRequest {
 
     private String fullName;
@@ -37,5 +39,15 @@ public class OrderRequest {
 
     public void setOrderDetails(String orderDetails) {
         this.orderDetails = orderDetails;
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", OrderRequest.class.getSimpleName() + "[", "]")
+                .add("fullName='" + fullName + "'")
+                .add("age='" + age + "'")
+                .add("oderType='" + oderType + "'")
+                .add("orderDetails='" + orderDetails + "'")
+                .toString();
     }
 }
