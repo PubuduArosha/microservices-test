@@ -10,7 +10,7 @@ import java.util.UUID;
 @RequestMapping("/orders")
 public class OrderController {
 
-    @PostMapping (consumes = "aplication/json", produces = "aplication/json")
+    @PostMapping (consumes = "application/json", produces = "application/json")
     public @ResponseBody OrderResponse createOrder(@RequestBody OrderRequest request){
 
         System.out.println("Order Details : " + request);
